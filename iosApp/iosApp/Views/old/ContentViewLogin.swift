@@ -1,3 +1,10 @@
+//
+//  ContentViewLogin.swift
+//  iosApp
+//
+//  Created by Admin on 11.03.2023.
+//  Copyright © 2023 orgName. All rights reserved.
+//
 
 import SwiftUI
 
@@ -20,13 +27,13 @@ struct ContentViewLogin: View {
                 
                 HStack(spacing: 15) {
                     Rectangle()
-                        .fill(Color("Color1"))
+                        .fill(Color("Color6"))
                         .frame(height: 1)
                     
                     Text("OR")
                     
                     Rectangle()
-                        .fill(Color("Color1"))
+                        .fill(Color("Color6"))
                         .frame(height: 1)
                 }
                 .padding(.horizontal, 30)
@@ -68,7 +75,7 @@ struct ContentViewLogin: View {
             }
             .padding(.vertical)
         }
-        .background(Color("Color").edgesIgnoringSafeArea(.all))
+        .background(Color("Color5").edgesIgnoringSafeArea(.all))
         .preferredColorScheme(.dark)
     }
 }
@@ -78,6 +85,8 @@ struct ContentViewLogin_Previews: PreviewProvider {
         ContentViewLogin()
     }
 }
+
+
 
 
 struct CShape: Shape {
@@ -136,7 +145,7 @@ struct Login : View {
                     HStack(spacing: 15){
                         
                         Image(systemName: "envelope.fill")
-                        .foregroundColor(Color("Color1"))
+                        .foregroundColor(Color("Color6"))
                         
                         TextField("Email Address", text: self.$email)
                     }
@@ -149,7 +158,7 @@ struct Login : View {
                 VStack {
                     HStack(spacing: 15) {
                         Image(systemName: "eye.slash.fill")
-                            .foregroundColor(Color("Color1"))
+                            .foregroundColor(Color("Color6"))
                         SecureField("Password", text: self.$pass)
                     }
                     
@@ -172,7 +181,7 @@ struct Login : View {
                 
             }   .padding()
                 .padding(.bottom, 65)
-                .background(Color("Color2"))
+                .background(Color("Color7"))
                 .clipShape(CShape())
                 .contentShape(CShape())
                 .shadow(color: Color.black.opacity(0.3), radius: 5, x: 0, y: -5)
@@ -191,7 +200,7 @@ struct Login : View {
                     .fontWeight(.bold)
                     .padding(.vertical)
                     .padding(.horizontal, 50)
-                    .background(Color("Color1"))
+                    .background(Color("Color6"))
                     .clipShape(Capsule())
                     .shadow(color: Color.white.opacity(0.1), radius: 5, x: 0, y: 5)
             }
@@ -231,7 +240,7 @@ struct SingUp: View {
                 VStack {
                     HStack(spacing: 15) {
                         Image(systemName: "envelope.fill")
-                        .foregroundColor(Color("Color1"))
+                        .foregroundColor(Color("Color6"))
                         TextField("Email Address", text: self.$email)
                     }
                     Divider().background(Color.white.opacity(0.5))
@@ -244,7 +253,7 @@ struct SingUp: View {
                     
                     HStack(spacing: 15) {
                         Image(systemName: "eye.slash.fill")
-                            .foregroundColor(Color("Color1"))
+                            .foregroundColor(Color("Color6"))
                         SecureField("Password", text: self.$pass)
                     }
                     Divider()
@@ -255,7 +264,7 @@ struct SingUp: View {
                 VStack {
                     HStack(spacing: 15) {
                         Image(systemName: "eye.slash.fill")
-                            .foregroundColor(Color("Color1"))
+                            .foregroundColor(Color("Color6"))
                         SecureField("Password", text: self.$Repass)
                     }
                     Divider().background(Color.white.opacity(0.5))
@@ -265,7 +274,7 @@ struct SingUp: View {
             }
             .padding()
             .padding(.bottom, 65)
-            .background(Color("Color2"))
+            .background(Color("Color7"))
             .clipShape(CShape1())
             .contentShape(CShape1())
             .shadow(color: Color.black.opacity(0.3), radius: 5, x: 0, y: -5)
@@ -283,7 +292,7 @@ struct SingUp: View {
                     .fontWeight(.bold)
                     .padding(.vertical)
                     .padding(.horizontal, 50)
-                    .background(Color("Color1"))
+                    .background(Color("Color6"))
                     .clipShape(Capsule())
                     .shadow(color: Color.white.opacity(0.1), radius: 5, x: 0, y: -5)
             }

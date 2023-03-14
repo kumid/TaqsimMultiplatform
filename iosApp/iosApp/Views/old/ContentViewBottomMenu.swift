@@ -23,6 +23,8 @@ struct ContentViewBottomMenu: View {
             VStack {
                 TabView(selection: $selectedTab) {
                     ForEach(Tab.allCases, id: \.rawValue) { tab in
+                
+                        
                         HStack {
                             Image(systemName: tab.rawValue)
                             Text("\(tab.rawValue.capitalized)")
@@ -40,7 +42,10 @@ struct ContentViewBottomMenu: View {
         }
         
         
-    }}
+    }
+    
+    
+}
 
 struct ContentViewBottomMenu_Previews: PreviewProvider {
     static var previews: some View {
